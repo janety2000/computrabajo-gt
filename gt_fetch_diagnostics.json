@@ -1,0 +1,24 @@
+{
+  "url": "https://gt.computrabajo.com/",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status_code": 200,
+      "response_headers": {
+        "Date": "Sun, 27 Sep 2026 17:34:57 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Cache-Control": "private,max-age=300",
+        "Content-Encoding": "gzip",
+        "Age": "100",
+        "Vary": "*"
+      },
+      "body_length": 122826,
+      "body_snippet": "<!DOCTYPE html>\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"es-GT\">\r\n<head>\r\n    \r\n    <title>Bolsa de trabajo y empleo en Guatemala |&#xA0;Computrabajo</title>\r\n\r\n    <meta name=\"title\" content=\"Bolsa de trabajo y empleo en Guatemala |&#xA0;Computrabajo\" />\r\n    <meta name=\"description\" content=\"Computrabajo es bolsa de trabajo l&#xED;der en Guatemala. Sube tu curr&#xED;culum, consulta las miles de oferta de trabajo y encuentra el mejor empleo de Guatemala!\" />\r\n    <meta name=\"author\" content=\"Computrabajo Guatemala\" />\r\n    <meta property=\"og:title\" content=\"Bolsa de trabajo y empleo en Guatemala |&#xA0;Computrabajo\" />\r\n    <meta property=\"og:description\" content=\"Computrabajo es bolsa de trabajo l&#xED;der en Guatemala. Sube tu curr&#xED;culum, consulta las miles de oferta de trabajo y encuentra el mejor empleo de Guatemala!\" />\r\n    <meta property=\"og:site_name\" content=\"Computrabajo Guatemala\" />\r\n    <meta property=\"og:type\" content=\"website\" />\r\n    <meta property=\"og:im",
+      "block_signature_matched": null,
+      "final_url_after_redirects": "https://gt.computrabajo.com/"
+    }
+  ],
+  "outcome": "ok"
+}

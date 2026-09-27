@@ -1,0 +1,1025 @@
+2026-09-27 17:34:56,836 INFO [STARTUP CHECK] INTERNAL_BOT_KEY is SET (length=64) — X-Internal-Auth header WILL be sent on every WordPress request.
+2026-09-27 17:34:56,836 INFO 🚀 Computrabajo Guatemala scraper — starting… (Ctrl+C to stop, safe to resume)
+2026-09-27 17:34:56,838 DEBUG Starting new HTTPS connection (1): guatemala.mimusjobs.com:443
+2026-09-27 17:34:56,911 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:34:56,912 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:56,967 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:56,968 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:56,970 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,017 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=part-time HTTP/1.1" 403 None
+2026-09-27 17:34:57,018 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,072 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:57,074 ERROR Term create error 'Part Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:57,075 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,123 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=contract HTTP/1.1" 403 None
+2026-09-27 17:34:57,124 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,173 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:57,175 ERROR Term create error 'Contract': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:57,176 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,233 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=temporary HTTP/1.1" 403 None
+2026-09-27 17:34:57,235 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,286 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:57,287 ERROR Term create error 'Temporary': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:57,289 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,333 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=internship HTTP/1.1" 403 None
+2026-09-27 17:34:57,335 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,382 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:57,384 ERROR Term create error 'Internship': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:57,387 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,448 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=volunteer HTTP/1.1" 403 None
+2026-09-27 17:34:57,450 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,494 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:57,495 ERROR Term create error 'Volunteer': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:57,496 INFO 📋 0 jobs already in tracker.
+2026-09-27 17:34:57,496 INFO Fetching homepage: https://gt.computrabajo.com/
+2026-09-27 17:34:57,497 DEBUG Starting new HTTPS connection (1): gt.computrabajo.com:443
+2026-09-27 17:34:57,556 DEBUG https://gt.computrabajo.com:443 "GET / HTTP/1.1" 200 None
+2026-09-27 17:34:57,559 INFO ✅ Homepage fetched cleanly (HTTP 200, 122,826 chars, no block signature detected).
+2026-09-27 17:34:57,589 INFO 📝 Wrote gt_fetch_diagnostics.json — check this file first if locations are ever empty.
+2026-09-27 17:34:57,599 INFO 📍 Found 48 location URLs via the div.lL container.
+2026-09-27 17:34:57,599 INFO 📍 Found 48 location URLs on the homepage.
+2026-09-27 17:34:57,599 DEBUG     [0] https://gt.computrabajo.com/empleos-en-guatemala
+2026-09-27 17:34:57,599 DEBUG     [1] https://gt.computrabajo.com/empleos-en-guatemala-en-guatemala-ciudad
+2026-09-27 17:34:57,600 DEBUG     [2] https://gt.computrabajo.com/empleos-en-guatemala-en-villa-nueva
+2026-09-27 17:34:57,600 DEBUG     [3] https://gt.computrabajo.com/empleos-en-guatemala-en-mixco
+2026-09-27 17:34:57,600 DEBUG     [4] https://gt.computrabajo.com/empleos-en-quetzaltenango
+2026-09-27 17:34:57,600 DEBUG     [5] https://gt.computrabajo.com/empleos-en-quetzaltenango-en-quetzaltenango
+2026-09-27 17:34:57,600 DEBUG     [6] https://gt.computrabajo.com/empleos-en-quetzaltenango-en-coatepeque
+2026-09-27 17:34:57,600 DEBUG     [7] https://gt.computrabajo.com/empleos-en-quetzaltenango-en-san-juan-ostuncalco
+2026-09-27 17:34:57,600 DEBUG     [8] https://gt.computrabajo.com/empleos-en-escuintla
+2026-09-27 17:34:57,600 DEBUG     [9] https://gt.computrabajo.com/empleos-en-escuintla-en-escuintla
+2026-09-27 17:34:57,600 DEBUG     [10] https://gt.computrabajo.com/empleos-en-escuintla-en-santa-lucia-cotzumalguapa
+2026-09-27 17:34:57,600 DEBUG     [11] https://gt.computrabajo.com/empleos-en-escuintla-en-san-jose
+2026-09-27 17:34:57,600 DEBUG     [12] https://gt.computrabajo.com/empleos-en-sacatepequez
+2026-09-27 17:34:57,600 DEBUG     [13] https://gt.computrabajo.com/empleos-en-sacatepequez-en-antigua-guatemala
+2026-09-27 17:34:57,600 DEBUG     [14] https://gt.computrabajo.com/empleos-en-sacatepequez-en-san-lucas-sacatepequez
+2026-09-27 17:34:57,600 DEBUG     [15] https://gt.computrabajo.com/empleos-en-sacatepequez-en-santa-lucia-milpas-altas
+2026-09-27 17:34:57,600 DEBUG     [16] https://gt.computrabajo.com/empleos-en-san-marcos
+2026-09-27 17:34:57,600 DEBUG     [17] https://gt.computrabajo.com/empleos-en-san-marcos-en-san-marcos
+2026-09-27 17:34:57,600 DEBUG     [18] https://gt.computrabajo.com/empleos-en-san-marcos-en-malacatan
+2026-09-27 17:34:57,600 DEBUG     [19] https://gt.computrabajo.com/empleos-en-san-marcos-en-ayutla-tecun-uman
+2026-09-27 17:34:57,600 DEBUG     [20] https://gt.computrabajo.com/empleos-en-chimaltenango
+2026-09-27 17:34:57,600 DEBUG     [21] https://gt.computrabajo.com/empleos-en-chimaltenango-en-chimaltenango
+2026-09-27 17:34:57,600 DEBUG     [22] https://gt.computrabajo.com/empleos-en-chimaltenango-en-parramos
+2026-09-27 17:34:57,601 DEBUG     [23] https://gt.computrabajo.com/empleos-en-chimaltenango-en-san-andres-itzapa
+2026-09-27 17:34:57,601 DEBUG     [24] https://gt.computrabajo.com/empleos-en-alta-verapaz
+2026-09-27 17:34:57,601 DEBUG     [25] https://gt.computrabajo.com/empleos-en-alta-verapaz-en-coban
+2026-09-27 17:34:57,601 DEBUG     [26] https://gt.computrabajo.com/empleos-en-alta-verapaz-en-tactic
+2026-09-27 17:34:57,601 DEBUG     [27] https://gt.computrabajo.com/empleos-en-alta-verapaz-en-san-pedro-carcha
+2026-09-27 17:34:57,601 DEBUG     [28] https://gt.computrabajo.com/empleos-en-suchitepequez
+2026-09-27 17:34:57,601 DEBUG     [29] https://gt.computrabajo.com/empleos-en-suchitepequez-en-mazatenango
+2026-09-27 17:34:57,601 DEBUG     [30] https://gt.computrabajo.com/empleos-en-suchitepequez-en-cuyotenango
+2026-09-27 17:34:57,601 DEBUG     [31] https://gt.computrabajo.com/empleos-en-suchitepequez-en-patulul
+2026-09-27 17:34:57,601 DEBUG     [32] https://gt.computrabajo.com/empleos-en-huehuetenango
+2026-09-27 17:34:57,601 DEBUG     [33] https://gt.computrabajo.com/empleos-en-huehuetenango-en-huehuetenango
+2026-09-27 17:34:57,601 DEBUG     [34] https://gt.computrabajo.com/empleos-en-huehuetenango-en-la-democracia
+2026-09-27 17:34:57,601 DEBUG     [35] https://gt.computrabajo.com/empleos-en-huehuetenango-en-san-pedro-soloma
+2026-09-27 17:34:57,601 DEBUG     [36] https://gt.computrabajo.com/empleos-en-peten
+2026-09-27 17:34:57,601 DEBUG     [37] https://gt.computrabajo.com/empleos-en-peten-en-flores
+2026-09-27 17:34:57,601 DEBUG     [38] https://gt.computrabajo.com/empleos-en-peten-en-sayaxche
+2026-09-27 17:34:57,601 DEBUG     [39] https://gt.computrabajo.com/empleos-en-peten-en-san-benito
+2026-09-27 17:34:57,601 DEBUG     [40] https://gt.computrabajo.com/empleos-en-jalapa
+2026-09-27 17:34:57,601 DEBUG     [41] https://gt.computrabajo.com/empleos-en-jalapa-en-jalapa
+2026-09-27 17:34:57,601 DEBUG     [42] https://gt.computrabajo.com/empleos-en-jalapa-en-mataquescuintla
+2026-09-27 17:34:57,601 DEBUG     [43] https://gt.computrabajo.com/empleos-en-jalapa-en-monjas
+2026-09-27 17:34:57,601 DEBUG     [44] https://gt.computrabajo.com/empleos-en-izabal
+2026-09-27 17:34:57,601 DEBUG     [45] https://gt.computrabajo.com/empleos-en-izabal-en-puerto-barrios
+2026-09-27 17:34:57,601 DEBUG     [46] https://gt.computrabajo.com/empleos-en-izabal-en-morales
+2026-09-27 17:34:57,601 DEBUG     [47] https://gt.computrabajo.com/empleos-en-izabal-en-los-amates
+2026-09-27 17:34:57,601 INFO 🚀 Starting Computrabajo Guatemala scrape across 48 locations, resuming at location #0 (https://gt.computrabajo.com/empleos-en-guatemala), page 1.
+2026-09-27 17:34:57,601 INFO Fetching listing page 1: https://gt.computrabajo.com/empleos-en-guatemala
+2026-09-27 17:34:57,705 DEBUG https://gt.computrabajo.com:443 "GET /empleos-en-guatemala HTTP/1.1" 200 None
+2026-09-27 17:34:57,715 DEBUG     GET https://gt.computrabajo.com/empleos-en-guatemala → HTTP 200 (324,967 chars)
+2026-09-27 17:34:57,797 INFO Found 20 job URLs on page 1
+2026-09-27 17:34:57,797 DEBUG     job 1: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-walmart-en-guatemala-ciudad-47F189481449193161373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 2: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-pilotos-de-reparto-licencia-a-villa-nueva-y-zona-12-en-guatemala-ciudad-503A7A4E5347E16F61373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 3: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-servicio-call-centerturno-pm-en-guatemala-ciudad-540AB6F7B1E9899061373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 4: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-cooperativa-ecosaba-rl-agencia-chuarrancho-en-chuarrancho-9B837F6E626EAFFC61373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 5: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-elektra-metaterminal-zona-18-elektra-en-guatemala-ciudad-6A82A3D74660E69261373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 6: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-control-de-calidad-en-guatemala-ciudad-BE3D593D17A3472561373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 7: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-jefe-visual-merchandansing-en-guatemala-ciudad-5E67D6BC44E5680D61373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 8: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-ventas-de-productos-financieros-zona-12-en-guatemala-ciudad-725316FA7D31C9E761373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 9: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-cuentas-agencia-de-carga-maritimo-aereo-y-terrestre-en-guatemala-ciudad-9FCAB1E0E182A4C361373E686DCF3405
+2026-09-27 17:34:57,797 DEBUG     job 10: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 11: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-pricesmart-en-guatemala-ciudad-2FE5947DF710C55961373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 12: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-decoracion-de-interiores-pradera-concepcion-en-santa-catarina-pinula-7B3267F8AD6F327161373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 13: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-soporte-de-plataformas-y-servicios-ti-en-guatemala-ciudad-7CFC9D4DABD46F8361373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 14: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-prestamo-banco-azteca-san-jose-pinula-banco-azteca-en-guatemala-ciudad-2CBDF6FF66EA824B61373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 15: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 16: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-extrafinanciamiento-en-guatemala-ciudad-9024894CDBDDC32F61373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 17: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ayudante-de-bodega-guatemala-zona-4-capital-en-guatemala-ciudad-B7DEEFE1B70B587061373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 18: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-servicios-logisticos-agencia-de-carga-en-guatemala-ciudad-3D6C22BDA881EC8E61373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 19: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-cocinero-para-hotel-en-guatemala-ciudad-E51EAEBA5415776761373E686DCF3405
+2026-09-27 17:34:57,798 DEBUG     job 20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-agente-bilingue-c1-ventas-nocturnas-q9000-zona-4-allied-global-zona-4-ciudad-capital-en-guatemala-ciudad-69A7F280B4DE9ABC61373E686DCF3405
+2026-09-27 17:34:57,798 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 1/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-walmart-en-guatemala-ciudad-47F189481449193161373E686DCF3405
+2026-09-27 17:34:57,886 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-walmart-en-guatemala-ciudad-47F189481449193161373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:34:57,889 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-walmart-en-guatemala-ciudad-47F189481449193161373E686DCF3405 → HTTP 200 (172,362 chars)
+2026-09-27 17:34:57,931 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-walmart-en-guatemala-ciudad-47F189481449193161373E686DCF3405
+    │ Title        : Ejecutivo de Punto de Venta Walmart
+    │ Company      : BAC Guatemala
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 82F30F1B9AC33A6C
+    │ Description  : ¡Forma parte del Equipo BAC!
+¡Si te apasionan las ventas, esta es tu oportunidad!
+Tendrás la gran oportunidad de formar parte del equipo líder en colocación de Tarjetas de Crédito a nivel nacional, ge…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:34:57,932 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:57,983 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=bac-guatemala HTTP/1.1" 403 None
+2026-09-27 17:34:57,985 DEBUG Starting new HTTPS connection (1): ii.ct-stc.com:443
+2026-09-27 17:34:58,059 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/05/10//banco-de-america-central174341thumbnail.png HTTP/1.1" 200 20886
+2026-09-27 17:34:58,061 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,112 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:34:58,113 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:34:58,115 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,164 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:34:58,165 ERROR Company post error 'BAC Guatemala': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:34:58,167 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,221 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ejecutivo-de-punto-de-venta-walmart HTTP/1.1" 403 None
+2026-09-27 17:34:58,230 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/05/10//banco-de-america-central174341thumbnail.png HTTP/1.1" 200 20886
+2026-09-27 17:34:58,231 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,279 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:34:58,280 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:34:58,282 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,326 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:34:58,328 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,376 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:34:58,377 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:58,379 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,422 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:34:58,423 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,468 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:34:58,469 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:34:58,470 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:58,527 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:34:58,528 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:34:59,530 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:34:59,580 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:34:59,581 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:01,583 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:01,634 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:01,635 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:01,636 INFO ❌ WordPress post failed: Ejecutivo de Punto de Venta Walmart
+2026-09-27 17:35:02,636 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 2/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-pilotos-de-reparto-licencia-a-villa-nueva-y-zona-12-en-guatemala-ciudad-503A7A4E5347E16F61373E686DCF3405
+2026-09-27 17:35:02,691 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-pilotos-de-reparto-licencia-a-villa-nueva-y-zona-12-en-guatemala-ciudad-503A7A4E5347E16F61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:02,694 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-pilotos-de-reparto-licencia-a-villa-nueva-y-zona-12-en-guatemala-ciudad-503A7A4E5347E16F61373E686DCF3405 → HTTP 200 (162,111 chars)
+2026-09-27 17:35:02,724 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-pilotos-de-reparto-licencia-a-villa-nueva-y-zona-12-en-guatemala-ciudad-503A7A4E5347E16F61373E686DCF3405
+    │ Title        : Pilotos de Reparto Licencia A - Villa Nueva y zona 12
+    │ Company      : Corporación Multi Inversiones
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Venta al consumidor
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 4CFAC1048B2C7C62
+    │ Description  : Requerimos -Nivel Académico - Tercero Básico (mínimo) -Disponibilidad de laborar en Bodegas Suresa (50 calle 16-03 zona 12 / Barcenas Villa Nueva). -Licencia tipo A para manejar camiones de 12 tonelad…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:02,725 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:02,768 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=corporaci-n-multi-inversiones HTTP/1.1" 403 None
+2026-09-27 17:35:02,777 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2026/09/09//cmi-corporacion-multi-inversionesgt145826thumbnail.jpeg HTTP/1.1" 200 2873
+2026-09-27 17:35:02,778 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:02,824 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:02,825 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:02,826 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:02,871 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:02,872 ERROR Company post error 'Corporación Multi Inversiones': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:02,874 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:02,915 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=pilotos-de-reparto-licencia-a---villa-nueva-y-zona-12 HTTP/1.1" 403 None
+2026-09-27 17:35:02,925 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2026/09/09//cmi-corporacion-multi-inversionesgt145826thumbnail.jpeg HTTP/1.1" 200 2873
+2026-09-27 17:35:02,926 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:02,978 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:02,979 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:02,981 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:03,025 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:03,027 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:03,071 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:03,072 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:03,074 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:03,121 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:03,123 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:03,167 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:03,169 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:03,170 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:03,215 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:03,216 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:04,218 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:04,264 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:04,265 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:06,266 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:06,315 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:06,316 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:06,317 INFO ❌ WordPress post failed: Pilotos de Reparto Licencia A - Villa Nueva y zona 12
+2026-09-27 17:35:07,317 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 3/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-servicio-call-centerturno-pm-en-guatemala-ciudad-540AB6F7B1E9899061373E686DCF3405
+2026-09-27 17:35:07,375 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-servicio-call-centerturno-pm-en-guatemala-ciudad-540AB6F7B1E9899061373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:07,377 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-servicio-call-centerturno-pm-en-guatemala-ciudad-540AB6F7B1E9899061373E686DCF3405 → HTTP 200 (171,533 chars)
+2026-09-27 17:35:07,423 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivoa-de-servicio-call-centerturno-pm-en-guatemala-ciudad-540AB6F7B1E9899061373E686DCF3405
+    │ Title        : Ejecutivo/a - De servicio call center/Turno PM
+    │ Company      : Banco G&T Continental
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 4200 USD
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 25709B44CADB3C39
+    │ Description  : -Disposición de laborar Jornada mixta de 15 a 22:00 hrs 1. Asegurar la atención de la demanda de interacciones de clientes internos y externos en los distintos canales de comunicación (llamada y elect…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:07,425 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,468 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=banco-g-t-continental HTTP/1.1" 403 None
+2026-09-27 17:35:07,476 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/04/18/banco-gt-continental-25709B44CADB3C39154810thumbnail.png HTTP/1.1" 200 4411
+2026-09-27 17:35:07,477 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,524 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:07,525 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:07,526 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,596 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:07,597 ERROR Company post error 'Banco G&T Continental': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:07,599 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,643 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ejecutivo-a---de-servicio-call-center-turno-pm HTTP/1.1" 403 None
+2026-09-27 17:35:07,650 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/04/18/banco-gt-continental-25709B44CADB3C39154810thumbnail.png HTTP/1.1" 200 4411
+2026-09-27 17:35:07,651 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,700 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:07,701 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:07,702 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,745 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:07,746 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,789 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:07,790 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:07,791 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,835 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:07,836 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,882 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:07,883 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:07,884 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:07,926 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:07,927 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:08,928 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:08,975 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:08,976 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:10,978 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:11,021 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:11,023 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:11,024 INFO ❌ WordPress post failed: Ejecutivo/a - De servicio call center/Turno PM
+2026-09-27 17:35:12,024 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 4/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-cooperativa-ecosaba-rl-agencia-chuarrancho-en-chuarrancho-9B837F6E626EAFFC61373E686DCF3405
+2026-09-27 17:35:12,061 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-cooperativa-ecosaba-rl-agencia-chuarrancho-en-chuarrancho-9B837F6E626EAFFC61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:12,064 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-cooperativa-ecosaba-rl-agencia-chuarrancho-en-chuarrancho-9B837F6E626EAFFC61373E686DCF3405 → HTTP 200 (164,500 chars)
+2026-09-27 17:35:12,095 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-ventas-cooperativa-ecosaba-rl-agencia-chuarrancho-en-chuarrancho-9B837F6E626EAFFC61373E686DCF3405
+    │ Title        : Ejecutivo de ventas - Cooperativa Ecosaba R.L. Agencia Chuarrancho
+    │ Company      : MICOOPE
+    │ Location     : Chuarrancho, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-09-03
+    │ Deadline     : 2026-11-02
+    │ External ID  : F4C1E5C838EDDA0C
+    │ Description  : Función principal: Promover la venta de productos y servicios financieros de la Cooperativa a sus asociados, usuarios y público en general, asesorando y creando nuevas oportunidades de negocio que per…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:12,096 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,145 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=micoope HTTP/1.1" 403 None
+2026-09-27 17:35:12,153 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2021/10/12/3d848a1ea8b0448488f6235607377thumbnail.jpg HTTP/1.1" 200 6620
+2026-09-27 17:35:12,154 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,197 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:12,198 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:12,200 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,246 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:12,248 ERROR Company post error 'MICOOPE': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:12,249 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,292 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ejecutivo-de-ventas---cooperativa-ecosaba-r-l--agencia-chuarrancho HTTP/1.1" 403 None
+2026-09-27 17:35:12,301 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2021/10/12/3d848a1ea8b0448488f6235607377thumbnail.jpg HTTP/1.1" 200 6620
+2026-09-27 17:35:12,302 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,348 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:12,349 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:12,351 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,394 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=chuarrancho--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:12,395 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,437 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:12,438 ERROR Term create error 'Chuarrancho, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:12,440 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,484 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:12,485 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,530 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:12,531 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:12,532 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:12,580 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:12,581 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:13,583 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:13,629 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:13,630 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:15,631 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:15,691 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:15,692 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:15,693 INFO ❌ WordPress post failed: Ejecutivo de ventas - Cooperativa Ecosaba R.L. Agencia Chuarrancho
+2026-09-27 17:35:16,693 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 5/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-elektra-metaterminal-zona-18-elektra-en-guatemala-ciudad-6A82A3D74660E69261373E686DCF3405
+2026-09-27 17:35:16,753 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-elektra-metaterminal-zona-18-elektra-en-guatemala-ciudad-6A82A3D74660E69261373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:16,756 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-elektra-metaterminal-zona-18-elektra-en-guatemala-ciudad-6A82A3D74660E69261373E686DCF3405 → HTTP 200 (174,602 chars)
+2026-09-27 17:35:16,793 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-elektra-metaterminal-zona-18-elektra-en-guatemala-ciudad-6A82A3D74660E69261373E686DCF3405
+    │ Title        : Asesor comercial Elektra Metaterminal zona 18 - Elektra
+    │ Company      : Grupo Salinas de Guatemala
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 5200 USD
+    │ Industry     : Venta al consumidor
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 2B9566EEA825E263
+    │ Description  : Oportunidad Elektra como Asesor comercial Elektra Metaterminal zona 18 en Grupo Salinas de Guatemala.
+Funciones
+Gestionar las ventas en el Metaterminal.
+Coordinar con el equipo de atención al cliente.…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:16,794 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:16,840 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=grupo-salinas-de-guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:16,849 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2020/10/14//gruposalinas200814thumbnail.jpeg HTTP/1.1" 200 7605
+2026-09-27 17:35:16,850 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:16,906 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:16,907 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:16,908 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:16,951 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:16,952 ERROR Company post error 'Grupo Salinas de Guatemala': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:16,954 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,002 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=asesor-comercial-elektra-metaterminal-zona-18---elektra HTTP/1.1" 403 None
+2026-09-27 17:35:17,010 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2020/10/14//gruposalinas200814thumbnail.jpeg HTTP/1.1" 200 7605
+2026-09-27 17:35:17,011 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,057 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:17,057 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:17,059 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,103 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:17,105 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,147 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:17,148 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:17,149 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,195 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:17,196 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,241 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:17,242 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:17,244 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:17,287 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:17,288 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:18,290 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:18,332 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:18,333 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:20,335 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:20,383 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:20,384 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:20,385 INFO ❌ WordPress post failed: Asesor comercial Elektra Metaterminal zona 18 - Elektra
+2026-09-27 17:35:21,385 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 6/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-control-de-calidad-en-guatemala-ciudad-BE3D593D17A3472561373E686DCF3405
+2026-09-27 17:35:21,451 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-control-de-calidad-en-guatemala-ciudad-BE3D593D17A3472561373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:21,454 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-control-de-calidad-en-guatemala-ciudad-BE3D593D17A3472561373E686DCF3405 → HTTP 200 (176,888 chars)
+2026-09-27 17:35:21,492 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-control-de-calidad-en-guatemala-ciudad-BE3D593D17A3472561373E686DCF3405
+    │ Title        : Analista Técnico II de Control de Calidad
+    │ Company      : BANCO DE LOS TRABAJADORES
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 20000 USD
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 74E4C167469820CC
+    │ Description  : Dar seguimiento a proyectos de construcción y remodelación de proyectos estratégicos de la Institución en todo el territorio nacional de Guatemala, de acuerdo con la leyes, reglamentos y lineamientos …
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:21,493 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,542 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=banco-de-los-trabajadores HTTP/1.1" 403 None
+2026-09-27 17:35:21,552 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/09/25/467c51f2899f43ba9f2b150752486thumbnail.png HTTP/1.1" 200 3616
+2026-09-27 17:35:21,553 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,597 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:21,597 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:21,599 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,645 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:21,646 ERROR Company post error 'BANCO DE LOS TRABAJADORES': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:21,648 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,691 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=analista-t-cnico-ii-de-control-de-calidad HTTP/1.1" 403 None
+2026-09-27 17:35:21,699 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/09/25/467c51f2899f43ba9f2b150752486thumbnail.png HTTP/1.1" 200 3616
+2026-09-27 17:35:21,700 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,743 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:21,743 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:21,745 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,787 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:21,788 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,832 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:21,833 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:21,835 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,878 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:21,880 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,938 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:21,939 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:21,940 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:21,985 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:21,986 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:22,988 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:23,029 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:23,030 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:25,032 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:25,077 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:25,078 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:25,079 INFO ❌ WordPress post failed: Analista Técnico II de Control de Calidad
+2026-09-27 17:35:26,079 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 7/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-jefe-visual-merchandansing-en-guatemala-ciudad-5E67D6BC44E5680D61373E686DCF3405
+2026-09-27 17:35:26,120 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-jefe-visual-merchandansing-en-guatemala-ciudad-5E67D6BC44E5680D61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:26,123 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-jefe-visual-merchandansing-en-guatemala-ciudad-5E67D6BC44E5680D61373E686DCF3405 → HTTP 200 (166,614 chars)
+2026-09-27 17:35:26,154 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-jefe-visual-merchandansing-en-guatemala-ciudad-5E67D6BC44E5680D61373E686DCF3405
+    │ Title        : Jefe Visual - Merchandansing
+    │ Company      : ALMACENES SIMAN, SOCIEDAD ANONIMA
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Venta al consumidor
+    │ Date posted  : 2026-09-03
+    │ Deadline     : 2026-11-02
+    │ External ID  : 4278982BA8DAE496
+    │ Description  : Buscamos talento con experiencia en Visual Merchandising, creatividad y liderazgo para formar parte de nuestro equipo. Requisitos: • Experiencia en Visual Merchandising, diseño de espacios comerciales…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:26,156 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,206 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=almacenes-siman--sociedad-anonima HTTP/1.1" 403 None
+2026-09-27 17:35:26,215 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/11/05/726488940e6740fa9288215929276thumbnail.jpeg HTTP/1.1" 200 3487
+2026-09-27 17:35:26,216 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,264 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:26,265 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:26,266 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,308 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:26,309 ERROR Company post error 'ALMACENES SIMAN, SOCIEDAD ANONIMA': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:26,310 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,353 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=jefe-visual---merchandansing HTTP/1.1" 403 None
+2026-09-27 17:35:26,363 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/11/05/726488940e6740fa9288215929276thumbnail.jpeg HTTP/1.1" 200 3487
+2026-09-27 17:35:26,364 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,409 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:26,410 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:26,411 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,455 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:26,456 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,500 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:26,502 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:26,503 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,559 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:26,561 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,618 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:26,619 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:26,621 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:26,667 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:26,668 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:27,669 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:27,718 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:27,720 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:29,721 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:29,764 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:29,766 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:29,767 INFO ❌ WordPress post failed: Jefe Visual - Merchandansing
+2026-09-27 17:35:30,767 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 8/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-ventas-de-productos-financieros-zona-12-en-guatemala-ciudad-725316FA7D31C9E761373E686DCF3405
+2026-09-27 17:35:30,842 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-ventas-de-productos-financieros-zona-12-en-guatemala-ciudad-725316FA7D31C9E761373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:30,845 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-ventas-de-productos-financieros-zona-12-en-guatemala-ciudad-725316FA7D31C9E761373E686DCF3405 → HTTP 200 (175,239 chars)
+2026-09-27 17:35:30,883 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-ventas-de-productos-financieros-zona-12-en-guatemala-ciudad-725316FA7D31C9E761373E686DCF3405
+    │ Title        : Asesor de Ventas de Productos Financieros - Zona 12
+    │ Company      : AC TALENTOS
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 4002 USD
+    │ Industry     : RRHH / Personal
+    │ Date posted  : 2026-08-04
+    │ Deadline     : 2026-10-03
+    │ External ID  : 648BA7333B2044EA
+    │ Description  : Requerimos: Graduado de Diversificado 1 año mínimo de experiencia en venta de productos financieros Habilidad de negociación Excelente servicio al cliente Enfocado en resultados Pasión por las ventas …
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:30,884 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:30,931 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=ac-talentos HTTP/1.1" 403 None
+2026-09-27 17:35:30,939 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2022/08/24/administradora-centroamericana-de-talentos-sociedad-anonima-648BA7333B2044EA133153thumbnail.png HTTP/1.1" 200 8081
+2026-09-27 17:35:30,941 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:30,983 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:30,983 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:30,985 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,028 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:31,029 ERROR Company post error 'AC TALENTOS': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:31,031 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,075 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=asesor-de-ventas-de-productos-financieros---zona-12 HTTP/1.1" 403 None
+2026-09-27 17:35:31,091 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2022/08/24/administradora-centroamericana-de-talentos-sociedad-anonima-648BA7333B2044EA133153thumbnail.png HTTP/1.1" 200 8081
+2026-09-27 17:35:31,092 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,137 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:31,137 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:31,139 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,183 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:31,184 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,228 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:31,229 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:31,230 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,272 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:31,274 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,316 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:31,317 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:31,319 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:31,361 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:31,362 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:32,364 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:32,411 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:32,412 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:34,413 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:34,456 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:34,457 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:34,458 INFO ❌ WordPress post failed: Asesor de Ventas de Productos Financieros - Zona 12
+2026-09-27 17:35:35,459 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 9/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-cuentas-agencia-de-carga-maritimo-aereo-y-terrestre-en-guatemala-ciudad-9FCAB1E0E182A4C361373E686DCF3405
+2026-09-27 17:35:35,517 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-cuentas-agencia-de-carga-maritimo-aereo-y-terrestre-en-guatemala-ciudad-9FCAB1E0E182A4C361373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:35,520 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-cuentas-agencia-de-carga-maritimo-aereo-y-terrestre-en-guatemala-ciudad-9FCAB1E0E182A4C361373E686DCF3405 → HTTP 200 (177,553 chars)
+2026-09-27 17:35:35,558 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-cuentas-agencia-de-carga-maritimo-aereo-y-terrestre-en-guatemala-ciudad-9FCAB1E0E182A4C361373E686DCF3405
+    │ Title        : Ejecutivo de Cuentas / Agencia de Carga - (marítimo, aéreo y terrestre)
+    │ Company      : SOLUCIONA RH
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 13000 USD
+    │ Industry     : RRHH / Personal
+    │ Date posted  : 2026-08-18
+    │ Deadline     : 2026-10-17
+    │ External ID  : A3F773786CC401DD
+    │ Description  : Será responsable de la prospección de clientes, implementando estrategias e incrementando las ventas de los servicios de importación y exportación. Elaborará la agenda comercial por semana, visitando …
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:35,559 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,604 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=soluciona-rh HTTP/1.1" 403 None
+2026-09-27 17:35:35,613 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/12/11/soluciona-rh-A3F773786CC401DD181345thumbnail.png HTTP/1.1" 200 2389
+2026-09-27 17:35:35,614 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,660 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:35,660 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:35,662 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,708 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:35,709 ERROR Company post error 'SOLUCIONA RH': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:35,711 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,755 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ejecutivo-de-cuentas---agencia-de-carga----mar-timo--a-reo-y-terrestre- HTTP/1.1" 403 None
+2026-09-27 17:35:35,765 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/12/11/soluciona-rh-A3F773786CC401DD181345thumbnail.png HTTP/1.1" 200 2389
+2026-09-27 17:35:35,766 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,814 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:35,815 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:35,816 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,865 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:35,866 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,915 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:35,916 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:35,918 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:35,961 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:35,962 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:36,009 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:36,011 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:36,013 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:36,060 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:36,061 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:37,062 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:37,110 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:37,111 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:39,113 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:39,164 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:39,166 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:39,166 INFO ❌ WordPress post failed: Ejecutivo de Cuentas / Agencia de Carga - (marítimo, aéreo y terrestre)
+2026-09-27 17:35:40,167 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 10/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405
+2026-09-27 17:35:40,222 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:40,225 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405 → HTTP 200 (152,113 chars)
+2026-09-27 17:35:40,252 WARNING No JobPosting JSON-LD found, using HTML fallback: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405
+2026-09-27 17:35:40,254 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-contable-de-operaciones-bancarias-en-guatemala-ciudad-ECAA4392B542DC8A61373E686DCF3405
+    │ Title        : Auxiliar Contable de Operaciones Bancarias
+    │ Company      : Importante empresa del sector
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 4,403.00 Q (Mensual) GTQ
+    │ Industry     : (none)
+    │ Date posted  : (unknown)
+    │ Deadline     : (estimated: )
+    │ External ID  : (none)
+    │ Description  : Buscamos personas organizadas, orientadas al detalle y con vocación de servicio para apoyar en la gestión y seguimiento de procesos administrativos, control documental, atención de requerimientos y so…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:40,255 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,297 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=importante-empresa-del-sector HTTP/1.1" 403 None
+2026-09-27 17:35:40,299 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,342 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:40,343 ERROR Company post error 'Importante empresa del sector': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:40,345 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,387 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=auxiliar-contable-de-operaciones-bancarias HTTP/1.1" 403 None
+2026-09-27 17:35:40,389 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,435 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:40,436 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,480 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:40,481 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:40,482 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,524 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:40,526 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,568 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:40,569 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:40,570 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:40,613 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:40,614 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:41,616 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:41,665 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:41,666 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:43,668 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:43,718 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:43,719 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:43,720 INFO ❌ WordPress post failed: Auxiliar Contable de Operaciones Bancarias
+2026-09-27 17:35:44,720 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 11/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-pricesmart-en-guatemala-ciudad-2FE5947DF710C55961373E686DCF3405
+2026-09-27 17:35:44,755 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-pricesmart-en-guatemala-ciudad-2FE5947DF710C55961373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:44,758 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-pricesmart-en-guatemala-ciudad-2FE5947DF710C55961373E686DCF3405 → HTTP 200 (171,105 chars)
+2026-09-27 17:35:44,791 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ejecutivo-de-punto-de-venta-pricesmart-en-guatemala-ciudad-2FE5947DF710C55961373E686DCF3405
+    │ Title        : Ejecutivo de Punto de Venta Pricesmart
+    │ Company      : BAC Guatemala
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 82F30F1B9AC33A6C
+    │ Description  : ¡Sé parte del equipo BAC!
+¡Si te apasionan las ventas, esta es tu oportunidad!
+Tendrás la gran oportunidad de formar parte del equipo líder en colocación de Tarjetas de Crédito a nivel nacional, gener…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:44,792 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:44,842 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=bac-guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:44,851 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/05/10//banco-de-america-central174341thumbnail.png HTTP/1.1" 200 20886
+2026-09-27 17:35:44,853 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:44,904 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:44,905 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:44,906 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:44,948 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:44,949 ERROR Company post error 'BAC Guatemala': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:44,951 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:44,994 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ejecutivo-de-punto-de-venta-pricesmart HTTP/1.1" 403 None
+2026-09-27 17:35:45,002 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/05/10//banco-de-america-central174341thumbnail.png HTTP/1.1" 200 20886
+2026-09-27 17:35:45,003 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,051 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:45,052 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:45,054 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,099 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:45,101 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,146 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:45,147 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:45,148 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,191 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:45,193 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,234 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:45,235 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:45,237 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:45,279 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:45,280 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:46,282 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:46,325 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:46,326 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:48,328 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:48,376 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:48,378 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:48,379 INFO ❌ WordPress post failed: Ejecutivo de Punto de Venta Pricesmart
+2026-09-27 17:35:49,379 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 12/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-decoracion-de-interiores-pradera-concepcion-en-santa-catarina-pinula-7B3267F8AD6F327161373E686DCF3405
+2026-09-27 17:35:49,445 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-decoracion-de-interiores-pradera-concepcion-en-santa-catarina-pinula-7B3267F8AD6F327161373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:49,447 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-decoracion-de-interiores-pradera-concepcion-en-santa-catarina-pinula-7B3267F8AD6F327161373E686DCF3405 → HTTP 200 (167,711 chars)
+2026-09-27 17:35:49,480 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-decoracion-de-interiores-pradera-concepcion-en-santa-catarina-pinula-7B3267F8AD6F327161373E686DCF3405
+    │ Title        : Auxiliar de decoración de interiores - Pradera Concepción
+    │ Company      : ALMACENES SIMAN, SOCIEDAD ANONIMA
+    │ Location     : Santa Catarina Pinula, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 5000 USD
+    │ Industry     : Venta al consumidor
+    │ Date posted  : 2026-09-03
+    │ Deadline     : 2026-11-02
+    │ External ID  : 4278982BA8DAE496
+    │ Description  : Buscamos Decorador/a Navideño/a para formar parte de nuestro equipo durante la temporada navideña. Será responsable de apoyar en el montaje, instalación y ambientación de la decoración navideña dentro…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:49,481 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,531 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=almacenes-siman--sociedad-anonima HTTP/1.1" 403 None
+2026-09-27 17:35:49,538 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/11/05/726488940e6740fa9288215929276thumbnail.jpeg HTTP/1.1" 200 3487
+2026-09-27 17:35:49,539 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,581 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:49,582 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:49,583 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,626 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:49,627 ERROR Company post error 'ALMACENES SIMAN, SOCIEDAD ANONIMA': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:49,629 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,670 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=auxiliar-de-decoraci-n-de-interiores---pradera-concepci-n HTTP/1.1" 403 None
+2026-09-27 17:35:49,678 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/11/05/726488940e6740fa9288215929276thumbnail.jpeg HTTP/1.1" 200 3487
+2026-09-27 17:35:49,679 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,722 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:49,722 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:49,724 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,771 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=santa-catarina-pinula--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:49,772 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,817 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:49,818 ERROR Term create error 'Santa Catarina Pinula, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:49,819 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,864 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:49,865 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,912 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:49,913 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:49,915 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:49,958 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:49,959 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:50,961 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:51,007 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:51,008 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:53,009 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:53,053 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:53,054 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:53,055 INFO ❌ WordPress post failed: Auxiliar de decoración de interiores - Pradera Concepción
+2026-09-27 17:35:54,055 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 13/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-soporte-de-plataformas-y-servicios-ti-en-guatemala-ciudad-7CFC9D4DABD46F8361373E686DCF3405
+2026-09-27 17:35:54,114 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-soporte-de-plataformas-y-servicios-ti-en-guatemala-ciudad-7CFC9D4DABD46F8361373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:54,117 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-soporte-de-plataformas-y-servicios-ti-en-guatemala-ciudad-7CFC9D4DABD46F8361373E686DCF3405 → HTTP 200 (178,372 chars)
+2026-09-27 17:35:54,154 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-tecnico-ii-de-soporte-de-plataformas-y-servicios-ti-en-guatemala-ciudad-7CFC9D4DABD46F8361373E686DCF3405
+    │ Title        : Analista Técnico II de Soporte de Plataformas y Servicios TI
+    │ Company      : BANCO DE LOS TRABAJADORES
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 20000 USD
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 74E4C167469820CC
+    │ Description  : Propósito del Puesto Analizar, definir, diseñar, integrar e implementar las diferentes iniciativas institucionales que contengan componentes y plataformas tecnológicas relacionadas con disciplinas com…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:54,156 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,202 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=banco-de-los-trabajadores HTTP/1.1" 403 None
+2026-09-27 17:35:54,217 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/09/25/467c51f2899f43ba9f2b150752486thumbnail.png HTTP/1.1" 200 3616
+2026-09-27 17:35:54,218 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,262 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:54,262 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:54,264 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,322 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:54,323 ERROR Company post error 'BANCO DE LOS TRABAJADORES': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:54,325 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,367 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=analista-t-cnico-ii-de-soporte-de-plataformas-y-servicios-ti HTTP/1.1" 403 None
+2026-09-27 17:35:54,375 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2025/09/25/467c51f2899f43ba9f2b150752486thumbnail.png HTTP/1.1" 200 3616
+2026-09-27 17:35:54,376 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,417 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:54,418 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:54,419 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,467 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:54,469 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,513 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:54,514 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:54,516 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,560 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:54,561 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,605 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:54,607 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:54,608 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:54,655 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:54,656 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:55,658 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:55,699 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:55,701 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:57,702 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:57,756 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:57,757 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:35:57,758 INFO ❌ WordPress post failed: Analista Técnico II de Soporte de Plataformas y Servicios TI
+2026-09-27 17:35:58,758 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 14/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-prestamo-banco-azteca-san-jose-pinula-banco-azteca-en-guatemala-ciudad-2CBDF6FF66EA824B61373E686DCF3405
+2026-09-27 17:35:58,813 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-prestamo-banco-azteca-san-jose-pinula-banco-azteca-en-guatemala-ciudad-2CBDF6FF66EA824B61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:35:58,815 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-prestamo-banco-azteca-san-jose-pinula-banco-azteca-en-guatemala-ciudad-2CBDF6FF66EA824B61373E686DCF3405 → HTTP 200 (174,586 chars)
+2026-09-27 17:35:58,854 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-de-prestamo-banco-azteca-san-jose-pinula-banco-azteca-en-guatemala-ciudad-2CBDF6FF66EA824B61373E686DCF3405
+    │ Title        : Asesor de préstamo Banco Azteca San José Pinula - Banco Azteca
+    │ Company      : Grupo Salinas de Guatemala
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 5200 USD
+    │ Industry     : Venta al consumidor
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 2B9566EEA825E263
+    │ Description  : Se busca Asesor de préstamo para Banco Azteca en San José Pinula.
+Funciones
+Gestionar solicitudes de préstamos.
+Analizar perfil de clientes potenciales.
+Coordinar con equipos de trabajo para el seguim…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:35:58,855 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:58,898 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=grupo-salinas-de-guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:58,906 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2020/10/14//gruposalinas200814thumbnail.jpeg HTTP/1.1" 200 7605
+2026-09-27 17:35:58,907 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:58,955 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:58,955 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:58,957 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,001 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:35:59,002 ERROR Company post error 'Grupo Salinas de Guatemala': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:35:59,004 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,050 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=asesor-de-pr-stamo-banco-azteca-san-jos--pinula---banco-azteca HTTP/1.1" 403 None
+2026-09-27 17:35:59,058 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2020/10/14//gruposalinas200814thumbnail.jpeg HTTP/1.1" 200 7605
+2026-09-27 17:35:59,059 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,102 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:35:59,102 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:35:59,104 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,148 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:35:59,150 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,212 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:35:59,213 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:59,214 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,257 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:35:59,259 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,301 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:35:59,303 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:35:59,304 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:35:59,351 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:35:59,352 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:00,354 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:00,403 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:00,404 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:02,405 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:02,453 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:02,454 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:02,455 INFO ❌ WordPress post failed: Asesor de préstamo Banco Azteca San José Pinula - Banco Azteca
+2026-09-27 17:36:03,455 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 15/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405
+2026-09-27 17:36:03,513 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:36:03,515 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405 → HTTP 200 (150,701 chars)
+2026-09-27 17:36:03,541 WARNING No JobPosting JSON-LD found, using HTML fallback: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405
+2026-09-27 17:36:03,543 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-electricista-industrial-zona-11-en-guatemala-ciudad-9D2D28F0A2FB4D5A61373E686DCF3405
+    │ Title        : Técnico Electricista Industrial - Zona 11
+    │ Company      : Importante empresa del sector
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : A convenir GTQ
+    │ Industry     : (none)
+    │ Date posted  : (unknown)
+    │ Deadline     : (estimated: )
+    │ External ID  : (none)
+    │ Description  : Requisitos: - Graduado de Bachiller Industrial y Perito en Electricidad o Técnico en Electricidad Industrial - Disponibilidad de horario - Experiencia como Electricista Industrial - Conocimiento mante…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:36:03,544 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,590 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=importante-empresa-del-sector HTTP/1.1" 403 None
+2026-09-27 17:36:03,591 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,635 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:36:03,636 ERROR Company post error 'Importante empresa del sector': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:36:03,637 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,684 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=t-cnico-electricista-industrial---zona-11 HTTP/1.1" 403 None
+2026-09-27 17:36:03,685 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,728 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:36:03,729 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,775 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:36:03,776 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:03,777 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,826 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:36:03,828 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,874 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:36:03,875 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:03,877 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:03,921 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:03,922 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:04,923 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:04,964 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:04,965 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:06,966 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:07,017 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:07,018 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:07,019 INFO ❌ WordPress post failed: Técnico Electricista Industrial - Zona 11
+2026-09-27 17:36:08,020 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 16/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-extrafinanciamiento-en-guatemala-ciudad-9024894CDBDDC32F61373E686DCF3405
+2026-09-27 17:36:08,084 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-extrafinanciamiento-en-guatemala-ciudad-9024894CDBDDC32F61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:36:08,086 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-extrafinanciamiento-en-guatemala-ciudad-9024894CDBDDC32F61373E686DCF3405 → HTTP 200 (170,746 chars)
+2026-09-27 17:36:08,151 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-extrafinanciamiento-en-guatemala-ciudad-9024894CDBDDC32F61373E686DCF3405
+    │ Title        : Analista de extrafinanciamiento
+    │ Company      : Banco G&T Continental
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Finanzas / Banca
+    │ Date posted  : 2026-08-10
+    │ Deadline     : 2026-10-09
+    │ External ID  : 25709B44CADB3C39
+    │ Description  : Estamos en búsqueda de talento para integrarse a nuestro equipo de Operaciones. La persona seleccionada será responsable de gestionar procesos de desembolso de extra financiamiento, validar documentac…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:36:08,152 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,199 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=banco-g-t-continental HTTP/1.1" 403 None
+2026-09-27 17:36:08,208 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/04/18/banco-gt-continental-25709B44CADB3C39154810thumbnail.png HTTP/1.1" 200 4411
+2026-09-27 17:36:08,209 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,257 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:08,258 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:08,260 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,303 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:36:08,305 ERROR Company post error 'Banco G&T Continental': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:36:08,307 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,351 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=analista-de-extrafinanciamiento HTTP/1.1" 403 None
+2026-09-27 17:36:08,360 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/04/18/banco-gt-continental-25709B44CADB3C39154810thumbnail.png HTTP/1.1" 200 4411
+2026-09-27 17:36:08,361 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,411 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:08,412 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:08,413 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,459 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:36:08,461 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,505 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:36:08,506 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:08,508 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,554 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:36:08,555 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,600 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:36:08,601 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:08,603 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:08,656 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:08,658 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:09,659 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:09,701 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:09,702 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:11,704 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:11,748 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:11,749 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:11,750 INFO ❌ WordPress post failed: Analista de extrafinanciamiento
+2026-09-27 17:36:12,750 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 17/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ayudante-de-bodega-guatemala-zona-4-capital-en-guatemala-ciudad-B7DEEFE1B70B587061373E686DCF3405
+2026-09-27 17:36:12,810 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-ayudante-de-bodega-guatemala-zona-4-capital-en-guatemala-ciudad-B7DEEFE1B70B587061373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:36:12,813 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ayudante-de-bodega-guatemala-zona-4-capital-en-guatemala-ciudad-B7DEEFE1B70B587061373E686DCF3405 → HTTP 200 (172,187 chars)
+2026-09-27 17:36:12,849 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-ayudante-de-bodega-guatemala-zona-4-capital-en-guatemala-ciudad-B7DEEFE1B70B587061373E686DCF3405
+    │ Title        : Ayudante de bodega - Guatemala, zona 4 Capital
+    │ Company      : Alimentos Ideal, S.A.
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : (not listed)
+    │ Industry     : Fabricación
+    │ Date posted  : 2026-09-11
+    │ Deadline     : 2026-11-10
+    │ External ID  : D2E2D15D7F4A3DD2
+    │ Description  : Requisitos: Experiencia en el área de bodega (preferentemente en el área de perecederos) Funciones: Descarga y despachos de productos a camiones Recepción de producto de devolución de unidades de repa…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:36:12,851 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:12,896 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=alimentos-ideal--s-a- HTTP/1.1" 403 None
+2026-09-27 17:36:12,908 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2016/09/13/alimentos-ideal-sa-D2E2D15D7F4A3DD2thumbnail.jpeg HTTP/1.1" 200 231241
+2026-09-27 17:36:12,923 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,000 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:13,013 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:13,014 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,063 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:36:13,064 ERROR Company post error 'Alimentos Ideal, S.A.': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:36:13,066 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,109 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=ayudante-de-bodega---guatemala--zona-4-capital HTTP/1.1" 403 None
+2026-09-27 17:36:13,117 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2016/09/13/alimentos-ideal-sa-D2E2D15D7F4A3DD2thumbnail.jpeg HTTP/1.1" 200 231241
+2026-09-27 17:36:13,125 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,202 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:13,216 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:13,218 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,259 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:36:13,261 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,303 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:36:13,304 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:13,306 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,350 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:36:13,352 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,393 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:36:13,395 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:13,396 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:13,440 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:13,442 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:14,443 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:14,491 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:14,492 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:16,493 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:16,537 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:16,538 ERROR Job post attempt 3 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:16,539 INFO ❌ WordPress post failed: Ayudante de bodega - Guatemala, zona 4 Capital
+2026-09-27 17:36:17,539 INFO ── https://gt.computrabajo.com/empleos-en-guatemala | page 1 | job 18/20: https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-servicios-logisticos-agencia-de-carga-en-guatemala-ciudad-3D6C22BDA881EC8E61373E686DCF3405
+2026-09-27 17:36:17,596 DEBUG https://gt.computrabajo.com:443 "GET /ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-servicios-logisticos-agencia-de-carga-en-guatemala-ciudad-3D6C22BDA881EC8E61373E686DCF3405 HTTP/1.1" 200 None
+2026-09-27 17:36:17,599 DEBUG     GET https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-servicios-logisticos-agencia-de-carga-en-guatemala-ciudad-3D6C22BDA881EC8E61373E686DCF3405 → HTTP 200 (178,662 chars)
+2026-09-27 17:36:17,637 INFO     ┌─ SCRAPED JOB ─────────────────────────────────────────
+    │ URL          : https://gt.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-comercial-servicios-logisticos-agencia-de-carga-en-guatemala-ciudad-3D6C22BDA881EC8E61373E686DCF3405
+    │ Title        : Asesor comercial (servicios logisticos / agencia de carga)
+    │ Company      : SOLUCIONA RH
+    │ Location     : Guatemala Ciudad, Guatemala
+    │ Job type     : full-time
+    │ Salary       : 9000 USD
+    │ Industry     : RRHH / Personal
+    │ Date posted  : 2026-08-18
+    │ Deadline     : 2026-10-17
+    │ External ID  : A3F773786CC401DD
+    │ Description  : Será responsable de dar seguimiento a una cartera de clientes y hacerla crecer con la prospección de clientes tanto en la ciudad como en el interior de la república, el cierre de ventas y la elaboraci…
+    └───────────────────────────────────────────────────────
+2026-09-27 17:36:17,638 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,685 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/companies?slug=soluciona-rh HTTP/1.1" 403 None
+2026-09-27 17:36:17,694 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/12/11/soluciona-rh-A3F773786CC401DD181345thumbnail.png HTTP/1.1" 200 2389
+2026-09-27 17:36:17,695 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,735 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:17,736 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:17,737 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,779 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/companies HTTP/1.1" 403 None
+2026-09-27 17:36:17,780 ERROR Company post error 'SOLUCIONA RH': 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/companies
+2026-09-27 17:36:17,782 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,825 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job-listings?slug=asesor-comercial--servicios-logisticos---agencia-de-carga- HTTP/1.1" 403 None
+2026-09-27 17:36:17,834 DEBUG https://ii.ct-stc.com:443 "GET /9/logos/empresas/2017/12/11/soluciona-rh-A3F773786CC401DD181345thumbnail.png HTTP/1.1" 200 2389
+2026-09-27 17:36:17,835 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,876 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/media HTTP/1.1" 403 None
+2026-09-27 17:36:17,877 ERROR Logo upload error: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/media
+2026-09-27 17:36:17,878 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,920 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_region?slug=guatemala-ciudad--guatemala HTTP/1.1" 403 None
+2026-09-27 17:36:17,922 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:17,966 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_region HTTP/1.1" 403 None
+2026-09-27 17:36:17,967 ERROR Term create error 'Guatemala Ciudad, Guatemala': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:17,968 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:18,011 DEBUG https://guatemala.mimusjobs.com:443 "GET /wp-json/wp/v2/job_listing_type?slug=full-time HTTP/1.1" 403 None
+2026-09-27 17:36:18,012 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:18,056 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job_listing_type HTTP/1.1" 403 None
+2026-09-27 17:36:18,057 ERROR Term create error 'Full Time': Expecting value: line 1 column 1 (char 0)
+2026-09-27 17:36:18,058 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:18,103 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:18,104 ERROR Job post attempt 1 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
+2026-09-27 17:36:19,106 DEBUG Resetting dropped connection: guatemala.mimusjobs.com
+2026-09-27 17:36:19,151 DEBUG https://guatemala.mimusjobs.com:443 "POST /wp-json/wp/v2/job-listings HTTP/1.1" 403 None
+2026-09-27 17:36:19,152 ERROR Job post attempt 2 failed: 403 Client Error: Forbidden for url: https://guatemala.mimusjobs.com/wp-json/wp/v2/job-listings
