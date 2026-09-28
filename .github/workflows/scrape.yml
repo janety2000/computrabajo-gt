@@ -11,7 +11,7 @@ on:
     # been scraped, the script exits almost instantly (it sees
     # gt_SCRAPE_COMPLETE.flag and returns), so these scheduled ticks
     # become a harmless no-op that costs a few seconds of Actions minutes.
-    - cron: "0 */2 * * *"
+    - cron: "25 8,20 * * *"
 
 concurrency:
   # This MUST be unique per country. If every country workflow shared
